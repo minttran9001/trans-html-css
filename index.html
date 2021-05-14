@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" />
+    <title>Trans</title>
+</head>
+
+<body>
+    <div class="header">
+        <div class="menu padding-left">
+            <ul class="nav-list ">
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        About
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        Products
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        Projects
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        Contact
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+    <div class="logo-area">
+        <div class="menu-btn">
+            <i class="fas fa-bars open"></i>
+            <i class="fas fa-times close"></i>
+        </div>
+        <img src="image/logo-trans.png" alt="Trans Logo" class="logo">
+
+    </div>
+    <div class="hero">
+        <div class="hero-text padding-left">
+            <p class="main-text">
+                Sleek as fukuc
+            </p>
+            <p class="sub-text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore
+            </p>
+            <div class="arrow-btn">
+                <div class="line"></div>
+                <div class="arrow">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="36" height="24" viewBox="0 0 36 24">
+                        <path id="Shape_2" data-name="Shape 2"
+                            d="M290.857,706l-1.286,1.384,9,9.693H266v1.846h32.571l-9,9.693L290.857,730,302,718Z"
+                            transform="translate(-266 -706)" fill="#fff" />
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bright-article">
+        
+    </div>
+</body>
+<script type="text/javascript">
+    const header = document.querySelector(".header")
+    const menuBtn = document.querySelector(".menu-btn")
+    document.querySelector(".menu-btn").addEventListener("click", () => {
+        header.classList.toggle("is-open")
+        menuBtn.classList.toggle("is-open")
+    })
+
+    document.body.addEventListener("click", () => {
+        header.classList.remove("is-open")
+        menuBtn.classList.remove("is-open")
+    })
+    document.querySelector(".header").addEventListener("click", (e) => {
+        e.stopPropagation();
+
+    })
+    document.querySelector(".logo-area").addEventListener("click", (e) => {
+        e.stopPropagation();
+
+    })
+
+</script>
+
+</html>
